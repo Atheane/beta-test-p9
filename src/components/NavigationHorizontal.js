@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom"
+import '../scss/Navigation.scss'
 
 export default () => {
   return (
-    <div style={{display: 'flex', justifyContent: 'space-around'}}>
+    <div className='navbar-horizontal'>
       <Link to="#Home">
         Home
       </Link>

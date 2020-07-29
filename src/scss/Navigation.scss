@@ -1,0 +1,36 @@
+.navbar-horizontal {
+  display: flex;
+  justify-content: space-around;
+  color: white !important;
+  width: calc(100% - 300px);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+a {
+  color: white !important;
+}
+
+.navbar-vertical {
+  position: relative;
+  top: 20%;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px !important;
+  line-height: 24px;
+  text-decoration: none;
+} 
+
+.menuv-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    margin-top: 24px;
+  }
+}
