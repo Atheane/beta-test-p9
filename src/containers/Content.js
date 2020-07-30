@@ -1,5 +1,8 @@
 import React from 'react'
 import Title from '../components/Title'
+import BarGraph from '../components/BarGraph'
+import Graph from '../components/Graph'
+import CardList from '../components/CardList'
 
 import '../scss/Content.scss'
 
@@ -14,27 +17,14 @@ export default () => {
       </div>
       <div className='content-container'>
         <div className='graph-container'>
-          <div id='bar-graph-container'>
-            Bar-Graph-Container
-          </div>
+          <BarGraph />
           <div id='lower-graph-container'>
-            <div className='lower-graph' id='lower-graph1'>
-              Graph1
-            </div>
-            <div className='lower-graph'id='lower-graph2'>
-              Graph2
-            </div>
-            <div className='lower-graph' id='lower-graph3'>
-              Graph3
-            </div>
+            <Graph title='Graph1' id='1'/>
+            <Graph title='Graph2' id='2'/>
+            <Graph title='Graph3' id='3'/>
           </div>
         </div>
-        <div className='card-container'>
-          <div className='card' id='card1'>Card1</div>
-          <div className='card' id='card2'>Card2</div>
-          <div className='card' id='card3'>Card3</div>
-          <div className='card' id='card4'>Card4</div>
-        </div>
+        <CardList />
       </div>
     </div>
   )
