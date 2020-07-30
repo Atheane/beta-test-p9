@@ -35,14 +35,18 @@
 }
 
 .ant-layout {
-  height: 90vh;
+  height: 120vh;
 }
 
 .ant-layout-sider {
-  height: 90vh;
+  height: 120vh;
   width: 120px;
 }
 
 .ant-menu-item a {
   margin-top: 500px;
+}
+
+.ant-layout.ant-layout-has-sider > .ant-layout, .ant-layout.ant-layout-has-sider > .ant-layout-content {
+  padding: 0px !important;
 }

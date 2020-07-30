@@ -1,5 +1,6 @@
 import React from 'react'
+import '../scss/Title.scss'
 
 export default ({ firstName }) => {
-  return <h1> Bonjour {firstName} </h1>
+  return <h1 className='title'> Bonjour <span className='red'>{firstName}</span> </h1>
 }
