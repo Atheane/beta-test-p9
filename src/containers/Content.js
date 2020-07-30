@@ -1,8 +1,13 @@
 import React from 'react'
+
 import Title from '../components/Title'
-import BarGraph from '../components/BarGraph'
-import Graph from '../components/Graph'
 import CardList from '../components/CardList'
+import GraphWrapper from '../components/GraphWrapper'
+
+import BarGraph from '../components/Graphs/BarGraph'
+import GraphLine from '../components/Graphs/GraphLine'
+import Radar from '../components/Graphs/Radar'
+import Score from '../components/Graphs/Score'
 
 import '../scss/Content.scss'
 
@@ -19,9 +24,15 @@ export default () => {
         <div className='graph-container'>
           <BarGraph />
           <div id='lower-graph-container'>
-            <Graph title='Graph1' id='1'/>
-            <Graph title='Graph2' id='2'/>
-            <Graph title='Graph3' id='3'/>
+            <GraphWrapper title='Graph1' id='1'>
+              <GraphLine />
+            </GraphWrapper>
+            <GraphWrapper title='Graph2' id='2'>
+              <Radar />
+            </GraphWrapper>
+            <GraphWrapper title='Graph3' id='3'>
+              <Score />
+            </GraphWrapper>
           </div>
         </div>
         <CardList />

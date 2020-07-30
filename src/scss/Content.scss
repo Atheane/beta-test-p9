@@ -23,7 +23,7 @@
       #bar-graph-container {
         width: 830px;
         height: 320px;
-        margin: auto;
+        margin: 0;
       }
       #lower-graph-container {
         height: 310px;
@@ -81,5 +81,6 @@
 @media (max-width: 1424px) {
   #page-container {
     margin-top: 50px;
+    margin-left: 50px;
   }
 }
