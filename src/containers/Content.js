@@ -3,7 +3,6 @@ import Title from '../components/Title'
 import BarGraph from '../components/BarGraph'
 import Graph from '../components/Graph'
 import CardList from '../components/CardList'
-
 import '../scss/Content.scss'
 
 export default () => {
