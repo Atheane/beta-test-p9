@@ -34,7 +34,7 @@ const data = [
 
 export default () => {
   return (
-    <div style={{ backgroundColor: '#FF0000', borderRadius: '15px' }}>
+    <div style={{ backgroundColor: '#FF0000', borderRadius: '8px' }}>
       <LineChart width={250} height={250} data={data}
         margin={{ top: 5, right: 10, left: 10, bottom: 5 }}
       >

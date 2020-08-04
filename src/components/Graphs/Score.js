@@ -9,15 +9,12 @@ const data = [
 ];
 const COLORS = ['red', 'white']
 
-
 export default () => {
   
     return (
       <PieChart width={250} height={250} onMouseEnter={() => {}}>
         <Pie
           data={data}
-          // cx={120}
-          // cy={200}
           innerRadius={70}
           outerRadius={80}
           fill="#8884d8"

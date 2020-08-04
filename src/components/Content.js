@@ -1,23 +1,27 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
-import Title from '../components/Title'
-import CardList from '../components/CardList'
-import GraphWrapper from '../components/GraphWrapper'
+import Title from './Title'
+import CardList from './CardList'
+import GraphWrapper from './GraphWrapper'
 
-import BarGraph from '../components/Graphs/BarGraph'
-import GraphLine from '../components/Graphs/GraphLine'
-import Radar from '../components/Graphs/Radar'
-import Score from '../components/Graphs/Score'
+import BarGraph from './Graphs/BarGraph'
+import GraphLine from './Graphs/GraphLine'
+import Radar from './Graphs/Radar'
+import Score from './Graphs/Score'
 
 import '../scss/Content.scss'
+import { StoreContext } from '../Store'
 
 export default () => {
-  const firstName = 'Thomas'
+
+  const store = useContext(StoreContext)
+
   const message = "Félicitation! Vous avez explosé vos objectifs d'hier 👏"
+
   return (
     <div id='page-container'>
       <div className='header-content'>
-          <Title firstName={firstName} />
+          <Title />
           <p> {message} </p>
       </div>
       <div className='content-container'>
